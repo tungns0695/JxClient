@@ -1,0 +1,7 @@
+data/update*.pak
+data/spr.pak
+data/resource.pak
+data/sound.pak
+*.dmp
+*.log
+music
