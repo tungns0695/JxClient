@@ -5,3 +5,5 @@ data/sound.pak
 *.dmp
 *.log
 music
+/spr
+/Auto/users
