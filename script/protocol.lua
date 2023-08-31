@@ -32,6 +32,7 @@ ScriptProtocol.KE_SCRIPT_PROTOCOL =
 	"emSCRIPT_PROTOCOL_SECURITY_UNLOCK",
 	"emSCRIPT_PROTOCOL_SECURITY_CONFIG",
 	"emSCRIPT_PROTOCOL_SECURITY_RESET",
+	"emSCRIPT_PROTOCOL_TASKTRACE",
 }
 
 function ScriptProtocol:_InitProtocolEnum()
@@ -191,8 +192,12 @@ if MODEL_GAMECLIENT == 1 then
 			"OpenQuestionnaire",
 			{OBJTYPE_STRING},
 		},
-		
-
+		{
+			"emSCRIPT_PROTOCOL_TASKTRACE",
+			"\\script\\tasktrace\\ui.lua",
+			"TaskTrace:OpenUI",
+			{OBJTYPE_NUMBER},
+		},
 	}
 	ScriptProtocol:RegProtocolSet(Def)
 end
